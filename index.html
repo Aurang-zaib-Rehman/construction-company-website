@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Construction Web</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm" id="navbar1">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-uppercase" href="#">
+          <img src="images/logo-min.png" alt="logo" style="width: 100px; padding-left: 20px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fw-semibold" style="gap: 15px;">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top: 56px; " >
+      <div class="carousel-inner">
+        <div class="carousel-item active position-relative" style="height: calc(100vh - 56px);">
+          <img src="images/hero1.jpg" class="d-block w-100 h-100 object-fit-cover-top" alt="Construction Site">
+          <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(255,165,0,0.3));"></div>
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center">
+            <h1 class="display-4 fw-bold text-white text-uppercase">Building Your Future with Strength</h1>
+            <p class="lead text-light w-75">We combine innovation, quality, and safety to create structures that stand the test of time.</p>
+            <a href="#" class="btn btn-lg mt-3 fw-semibold text-white border-0" style="background-color: #0084ff;">Our Projects</a>
+          </div>
+        </div>
+
+        <div class="carousel-item position-relative" style="height: calc(100vh - 56px);">
+          <img src="images/hero2.jpg" class="d-block w-100 h-100 object-fit-cover-top" alt="Building Design">
+          <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(255,165,0,0.3));"></div>
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center">
+            <h1 class="display-4 fw-bold text-white text-uppercase">From Vision to Reality</h1>
+            <p class="lead text-light w-75">We transform your architectural dreams into strong, elegant, and sustainable constructions.</p>
+            <a href="#" class="btn btn-lg mt-3 fw-semibold text-white border-0" style="background-color: #0084ff;">Our Projects</a>
+          </div>
+        </div>
+
+        <div class="carousel-item position-relative" style="height: calc(100vh - 56px);">
+          <img src="images/hero3.jpg" class="d-block w-100 h-100 object-fit-cover-top" alt="Construction Workers">
+          <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(255,165,0,0.3));"></div>
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center">
+            <h1 class="display-4 fw-bold text-white text-uppercase">We Build with Integrity</h1>
+            <p class="lead text-light w-75">Our team ensures excellence at every stage, from planning to finishing touches.</p>
+            <a href="#" class="btn btn-lg mt-3 fw-semibold text-white border-0" style="background-color: #0084ff;">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- about section -->
+    <section class="py-5" style="min-height:100vh; background-color: #f8f9fa; " id="about">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-uppercase" style="letter-spacing: 1px; color: #008cff; margin-top: 50px;">About Us</h2>
+            </div>
+            <div class="row align-items-center gy-4">
+                <div class="col-md-6 text-center">
+                    <img src="images/about2-min.jpg" alt="About image" 
+                        class="img-fluid rounded shadow" 
+                        style="max-height: 430px; width: 70%; object-fit: cover;">  
+                </div>
+                <div class="col-md-6">
+                    <p class="text-secondary mb-4" style="line-height: 1.8;">
+                    With over <span class="fw-semibold">20 years of experience</span>, Zaelix Construction has been shaping skylines 
+                    and building trust through every project. From residential towers to commercial spaces, 
+                    our team ensures quality, safety, and sustainability at every step.
+                    </p>
+                    <p class="text-secondary mb-4" style="line-height: 1.8;">
+                    Our mission is simple — to build spaces that inspire and stand the test of time. 
+                    With a blend of modern engineering and skilled craftsmanship, we turn your visions into lasting landmarks.
+                    </p>
+                    <a href="#" class="btn btn-lg fw-semibold text-white border-0" 
+                    style="background-color: #008cff;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- services section -->
+    <section class="py-5" style="background-color: #fff; min-height: 100vh; " id="services">
+        <div class="container text-center">
+            <h2 class="fw-bold text-uppercase mb-3" style="color: #008cff; padding-top: 60px; letter-spacing: 1px;">Our Services</h2>
+            <p class="text-muted mb-5" style="max-width: 700px; margin: auto; font-size: 1rem;">
+            We bring innovation and precision to every project, ensuring quality, safety, and client satisfaction in all our services.
+            </p>
+
+            <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-lg"
+                style="transition: all 0.4s ease; transform: translateY(0); cursor: pointer; border-radius: 15px;"
+                onmouseover="this.style.transform='translateY(-10px) scale(1.03)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)';"
+                onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+
+                <div class="card-body text-center p-4">
+                    <div class="mb-3" style="transition: transform 0.4s ease;">
+                    <i class="fa-solid fa-building fa-3x" style="color: #008cff; transition: all 0.4s ease;"
+                        onmouseover="this.style.color='#008cff'; this.style.transform='rotate(10deg) scale(1.2)';"
+                        onmouseout="this.style.color='#008cff'; this.style.transform='rotate(0) scale(1)';"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Commercial Construction</h5>
+                    <p class="card-text text-secondary">
+                    Modern and durable commercial structures built with precision, design, and safety in mind.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-lg"
+                style="transition: all 0.4s ease; transform: translateY(0); cursor: pointer; border-radius: 15px;"
+                onmouseover="this.style.transform='translateY(-10px) scale(1.03)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)';"
+                onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                    <i class="fa-solid fa-house-chimney fa-3x" style="color: #008cff; transition: all 0.4s ease;"
+                        onmouseover="this.style.color='#008cff'; this.style.transform='rotate(-10deg) scale(1.2)';"
+                        onmouseout="this.style.color='#008cff'; this.style.transform='rotate(0) scale(1)';"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Residential Projects</h5>
+                    <p class="card-text text-secondary">
+                    Stylish and sustainable housing solutions built for modern comfort and long-lasting value.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-lg"
+                style="transition: all 0.4s ease; transform: translateY(0); cursor: pointer; border-radius: 15px;"
+                onmouseover="this.style.transform='translateY(-10px) scale(1.03)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)';"
+                onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                    <i class="fa-solid fa-road fa-3x" style="color: #008cff; transition: all 0.4s ease;"
+                        onmouseover="this.style.color='#008cff'; this.style.transform='rotate(10deg) scale(1.2)';"
+                        onmouseout="this.style.color='#008cff'; this.style.transform='rotate(0) scale(1)';"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Infrastructure Development</h5>
+                    <p class="card-text text-secondary">
+                    Creating reliable infrastructure like roads and bridges to support strong communities.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-lg"
+                style="transition: all 0.4s ease; transform: translateY(0); cursor: pointer; border-radius: 15px;"
+                onmouseover="this.style.transform='translateY(-10px) scale(1.03)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)';"
+                onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                    <i class="fa-solid fa-paint-roller fa-3x" style="color: #008cff; transition: all 0.4s ease;"
+                        onmouseover="this.style.color='#008cff'; this.style.transform='rotate(-10deg) scale(1.2)';"
+                        onmouseout="this.style.color='#008cff'; this.style.transform='rotate(0) scale(1)';"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Renovation & Remodeling</h5>
+                    <p class="card-text text-secondary">
+                    Transforming old spaces into fresh, modern, and functional designs that fit your vision.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-lg"
+                style="transition: all 0.4s ease; transform: translateY(0); cursor: pointer; border-radius: 15px;"
+                onmouseover="this.style.transform='translateY(-10px) scale(1.03)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)';"
+                onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                    <i class="fa-solid fa-hard-hat fa-3x" style="color: #008cff; transition: all 0.4s ease;"
+                        onmouseover="this.style.color='#008cff'; this.style.transform='rotate(10deg) scale(1.2)';"
+                        onmouseout="this.style.color='#008cff'; this.style.transform='rotate(0) scale(1)';"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Project Management</h5>
+                    <p class="card-text text-secondary">
+                    Expert supervision and planning to ensure on-time, high-quality project delivery.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-lg"
+                style="transition: all 0.4s ease; transform: translateY(0); cursor: pointer; border-radius: 15px;"
+                onmouseover="this.style.transform='translateY(-10px) scale(1.03)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)';"
+                onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                    <i class="fa-solid fa-drafting-compass fa-3x" style="color: #008cff; transition: all 0.4s ease;"
+                        onmouseover="this.style.color='#008cff'; this.style.transform='rotate(-10deg) scale(1.2)';"
+                        onmouseout="this.style.color='#008cff'; this.style.transform='rotate(0) scale(1)';"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Architectural Design</h5>
+                    <p class="card-text text-secondary">
+                    Elegant and functional architectural solutions that bring creativity and precision together.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- projects section -->
+    <section class="py-5" id="projects" style="background-color:#f8f9fa; min-height:100vh;" id="projects">
+        <div class="container text-center">
+            <h2 class="fw-bold text-uppercase mb-3" style="color:#008cff; margin-top: 50px;">Our Projects</h2>
+            <p class="text-muted mb-5" style="max-width:700px; margin:auto;">
+            Explore some of our latest construction projects that showcase innovation, quality, and modern design.
+            </p>
+
+            <div class="row g-4 justify-content-center">
+
+            <div class="col-md-4 d-flex justify-content-center">
+                <section class="card"
+                style="position: relative; width: 280px; height: 380px; background-color: #def3fc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; perspective: 1000px; transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);"
+                onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+
+                <img src="images/project1-min.jpg" alt="Project 1"
+                    style="width:100%; height:100%; object-fit:cover; transition: all 1s ease; opacity:1;">
+
+                <div class="card__content"
+                    style="color:#000000; position:absolute; top:0; left:0; width:100%; height:100%; padding:20px; box-sizing:border-box; background-color:rgba(255,255,255,0.9); transform:rotateX(-90deg); transform-origin:bottom; transition: all 1s cubic-bezier(0.25,0.8,0.25,1);">
+                    <p class="card__title" style="margin:0; font-size:22px; font-weight:700; color:#000;">Modern Office Complex</p>
+                    <p class="card__description" style="margin-top:10px; font-size:14px; line-height:1.5; color:#333;">
+                    A state-of-the-art office building designed for productivity, comfort, and energy efficiency.
+                    </p>
+                </div>
+
+                <script>
+                    const card1 = document.currentScript.parentElement;
+                    card1.addEventListener('mouseenter', function () {
+                    this.querySelector('.card__content').style.transform = 'rotateX(0deg)';
+                    this.querySelector('img').style.opacity = '0.3';
+                    this.querySelector('img').style.transform = 'scale(1.05)';
+                    });
+                    card1.addEventListener('mouseleave', function () {
+                    this.querySelector('.card__content').style.transform = 'rotateX(-90deg)';
+                    this.querySelector('img').style.opacity = '1';
+                    this.querySelector('img').style.transform = 'scale(1)';
+                    });
+                </script>
+                </section>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+                <section class="card"
+                style="position: relative; width: 280px; height: 380px; background-color: #e0defc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; perspective: 1000px; transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);"
+                onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+
+                <img src="images/project2.jpg" alt="Project 2"
+                    style="width:100%; height:100%; object-fit:cover; transition: all 1s ease; opacity:1;">
+
+                <div class="card__content"
+                    style="color:#000000; position:absolute; top:0; left:0; width:100%; height:100%; padding:20px; box-sizing:border-box; background-color:rgba(255,255,255,0.9); transform:rotateX(-90deg); transform-origin:bottom; transition: all 1s cubic-bezier(0.25,0.8,0.25,1);">
+                    <p class="card__title" style="margin:0; font-size:22px; font-weight:700; color:#000;">Luxury Villa</p>
+                    <p class="card__description" style="margin-top:10px; font-size:14px; line-height:1.5; color:#333;">
+                    An elegant and sustainable residential project combining modern architecture with natural light.
+                    </p>
+                </div>
+
+                <script>
+                    const card2 = document.currentScript.parentElement;
+                    card2.addEventListener('mouseenter', function () {
+                    this.querySelector('.card__content').style.transform = 'rotateX(0deg)';
+                    this.querySelector('img').style.opacity = '0.3';
+                    this.querySelector('img').style.transform = 'scale(1.05)';
+                    });
+                    card2.addEventListener('mouseleave', function () {
+                    this.querySelector('.card__content').style.transform = 'rotateX(-90deg)';
+                    this.querySelector('img').style.opacity = '1';
+                    this.querySelector('img').style.transform = 'scale(1)';
+                    });
+                </script>
+                </section>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+                <section class="card"
+                style="position: relative; width: 280px; height: 380px; background-color: #dedefc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; perspective: 1000px; transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);"
+                onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+
+                <img src="images/project3.jpg" alt="Project 3"
+                    style="width:100%; height:100%; object-fit:cover; transition: all 1s ease; opacity:1;">
+
+                <div class="card__content"
+                    style="color:#000000; position:absolute; top:0; left:0; width:100%; height:100%; padding:20px; box-sizing:border-box; background-color:rgba(255,255,255,0.9); transform:rotateX(-90deg); transform-origin:bottom; transition: all 1s cubic-bezier(0.25,0.8,0.25,1);">
+                    <p class="card__title" style="margin:0; font-size:22px; font-weight:700; color:#000;">Bridge Construction</p>
+                    <p class="card__description" style="margin-top:10px; font-size:14px; line-height:1.5; color:#333;">
+                    A modern bridge project ensuring safety, strength, and aesthetic appeal in every detail.
+                    </p>
+                </div>
+
+                <script>
+                    const card3 = document.currentScript.parentElement;
+                    card3.addEventListener('mouseenter', function () {
+                    this.querySelector('.card__content').style.transform = 'rotateX(0deg)';
+                    this.querySelector('img').style.opacity = '0.3';
+                    this.querySelector('img').style.transform = 'scale(1.05)';
+                    });
+                    card3.addEventListener('mouseleave', function () {
+                    this.querySelector('.card__content').style.transform = 'rotateX(-90deg)';
+                    this.querySelector('img').style.opacity = '1';
+                    this.querySelector('img').style.transform = 'scale(1)';
+                    });
+                </script>
+                </section>
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- team section -->
+    <section style="padding: 80px 0; background-color: #f8f9fa;" id="team">
+      <div class="container text-center">
+        <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 50px;">Meet Our Team</h2>
+
+        <div class="row justify-content-center" style="gap: 30px;">
+
+          <div class="col-md-3" 
+            style="background: #fff; max-width: 250px; border-radius: 15px; padding: 60px 20px 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: visible; position: relative; transition: all 0.4s ease; cursor: pointer;"
+            onmouseover="this.querySelector('.profile-img').style.transform='translateY(-50px)'; this.querySelector('.socials').style.opacity='1'; this.querySelector('.socials').style.transform='translateY(0)';"
+            onmouseout="this.querySelector('.profile-img').style.transform='translateY(0)'; this.querySelector('.socials').style.opacity='0'; this.querySelector('.socials').style.transform='translateY(20px)';">
+
+            <img src="images/profile3-min.jpg" alt="CEO" class="profile-img"
+                style="width:150px; height:15 0px; border-radius:50%; border: 4px solid #5492cf; object-fit:cover; transition: all 0.4s ease; position: relative; z-index:2;">
+            <h4 style="font-weight:700; margin-top:15px;">John Smith</h4>
+            <p style="color:gray; margin-bottom:10px;">Chief Executive Officer</p>
+
+            <div class="socials" style="opacity:0; transform:translateY(20px); transition: all 0.4s ease;">
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3" 
+            style="background: #fff; max-width: 250px; border-radius: 15px; padding: 60px 20px 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: visible; position: relative; transition: all 0.4s ease; cursor: pointer;"
+            onmouseover="this.querySelector('.profile-img').style.transform='translateY(-50px)'; this.querySelector('.socials').style.opacity='1'; this.querySelector('.socials').style.transform='translateY(0)';"
+            onmouseout="this.querySelector('.profile-img').style.transform='translateY(0)'; this.querySelector('.socials').style.opacity='0'; this.querySelector('.socials').style.transform='translateY(20px)';">
+
+            <img src="images/profile2-min.jpg" alt="Manager" class="profile-img"
+                style="width:150px; height:150px; border-radius:50%; border: 4px solid #5492cf; object-fit:cover; transition: all 0.4s ease; position: relative; z-index:2;">
+            <h4 style="font-weight:700; margin-top:15px;">Emma Johnson</h4>
+            <p style="color:gray; margin-bottom:10px;">Project Manager</p>
+
+            <div class="socials" style="opacity:0; transform:translateY(20px); transition: all 0.4s ease;">
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3" 
+             style="background: #fff; max-width: 250px; border-radius: 15px; padding: 60px 20px 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: visible; position: relative; transition: all 0.4s ease; cursor: pointer;"
+            onmouseover="this.querySelector('.profile-img').style.transform='translateY(-50px)'; this.querySelector('.socials').style.opacity='1'; this.querySelector('.socials').style.transform='translateY(0)';"
+            onmouseout="this.querySelector('.profile-img').style.transform='translateY(0)'; this.querySelector('.socials').style.opacity='0'; this.querySelector('.socials').style.transform='translateY(20px)';">
+
+            <img src="images/profile4-min.jpg" alt="Engineer" class="profile-img"
+                style="width:150px; height:150px; border-radius:50%; border: 4px solid #5492cf; object-fit:cover; transition: all 0.4s ease; position: relative; z-index:2;">
+            <h4 style="font-weight:700; margin-top:15px;">Michael Lee</h4>
+            <p style="color:gray; margin-bottom:10px;">Civil Engineer</p>
+
+            <div class="socials" style="opacity:0; transform:translateY(20px); transition: all 0.4s ease;">
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3" 
+            style="background: #fff; max-width: 250px; border-radius: 15px; padding: 60px 20px 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: visible; position: relative; transition: all 0.4s ease; cursor: pointer;"
+            onmouseover="this.querySelector('.profile-img').style.transform='translateY(-50px)'; this.querySelector('.socials').style.opacity='1'; this.querySelector('.socials').style.transform='translateY(0)';"
+            onmouseout="this.querySelector('.profile-img').style.transform='translateY(0)'; this.querySelector('.socials').style.opacity='0'; this.querySelector('.socials').style.transform='translateY(20px)';">
+
+            <img src="images/profile1-min.jpg" alt="Architect" class="profile-img"
+                style="width:150px; height:150px; border-radius:50%; border: 4px solid #5492cf; object-fit:cover; transition: all 0.4s ease; position: relative; z-index:2;">
+            <h4 style="font-weight:700; margin-top:15px;">Sophia Brown</h4>
+            <p style="color:gray; margin-bottom:10px;">Architect</p>
+
+            <div class="socials" style="opacity:0; transform:translateY(20px); transition: all 0.4s ease;">
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- contact section -->
+<section style="padding:80px 0; background:linear-gradient(135deg,#98c0fd,#007bff,#bebffa); color:#fff; text-align:center;" id="contact">
+  <div class="container" style="max-width:800px; margin:auto;">
+    <h2 style="font-size:36px; font-weight:700; margin-bottom:20px;">Get In Touch</h2>
+    <p style="margin-bottom:40px; font-size:16px; opacity:0.9;">We'd love to hear from you! Fill out the form and we'll get back to you shortly.</p>
+    
+    <form style="display:flex; flex-direction:column; gap:20px;">
+      <input type="text" placeholder="Your Name" 
+        style="padding:15px; border:none; border-radius:10px; outline:none; font-size:16px; transition:all 0.3s ease; box-shadow:0 0 0 0 rgba(255,255,255,0);"
+        onfocus="this.style.boxShadow='0 0 10px rgba(255,255,255,0.6)';" 
+        onblur="this.style.boxShadow='0 0 0 0 rgba(255,255,255,0)';">
+
+      <input type="email" placeholder="Your Email"
+        style="padding:15px; border:none; border-radius:10px; outline:none; font-size:16px; transition:all 0.3s ease;"
+        onfocus="this.style.boxShadow='0 0 10px rgba(255,255,255,0.6)';" 
+        onblur="this.style.boxShadow='0 0 0 0 rgba(255,255,255,0)';">
+
+      <textarea placeholder="Your Message" rows="4"
+        style="padding:15px; border:none; border-radius:10px; outline:none; font-size:16px; resize:none; transition:all 0.3s ease;"
+        onfocus="this.style.boxShadow='0 0 10px rgba(255,255,255,0.6)';" 
+        onblur="this.style.boxShadow='0 0 0 0 rgba(255,255,255,0)';"></textarea>
+
+      <button type="submit" 
+        style="background:#fff; color:#0d6efd; font-weight:600; border:none; padding:14px; border-radius:10px; cursor:pointer; font-size:16px; transition:all 0.3s ease;"
+        onmouseover="this.style.background='#0d6efd'; this.style.color='#fff';"
+        onmouseout="this.style.background='#fff'; this.style.color='#0d6efd';">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#111; color:#ccc; padding:50px 20px; text-align:center; position:relative;">
+  <div class="container">
+    <h3 style="color:#fff; margin-bottom:15px; font-size:24px; font-weight:700;">Zaelix Construction</h3>
+    <p style="max-width:600px; margin:auto; font-size:14px; line-height:1.6;">Building dreams with precision and passion. From concept to completion, we deliver excellence in every project.</p>
+    
+    <div style="margin:25px 0;">
+      <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" style="color:#0d6efd; margin:0 10px; font-size:20px;"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <p style="font-size:13px; color:#777;">&copy; 2025 Zaelix Construction. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
